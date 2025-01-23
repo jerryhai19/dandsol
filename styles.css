@@ -411,82 +411,119 @@ body {
 
 /* Why Choose Us Section Styles */
 .why-choose-us {
-  padding: 60px 20px;
-  background: #f4f4f4;
+    padding: 80px 30px;
+    background-color: #f5f5f5;
 }
 
-.why-choose-us h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 10px;
-  font-weight: bold;
+.why-choose-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.why-choose-us p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #666;
-  max-width: 800px;
-  margin: 0 auto 40px;
-  line-height: 1.8;
+.why-choose-us-heading {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-/* Features Grid */
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin: 0 auto;
-  max-width: 1200px;
+.why-choose-us-subheading {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: 1.6;
 }
 
-.feature-item {
-  background: #fff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.why-choose-us-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
 }
 
-.feature-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.why-choose-us-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 22%;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.feature-item i {
-  font-size: 3rem;
-  color: #ff5722;
-  margin-bottom: 20px;
+.why-choose-us-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.feature-item h4 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
+.why-choose-us-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
 }
 
-.feature-item p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
+.why-choose-us-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .why-choose-us h2 {
-    font-size: 2rem;
-  }
+.why-choose-us-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+}
 
-  .why-choose-us p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+/* Responsiveness for Why Choose Us Section */
+@media (max-width: 1024px) {
+    .why-choose-us-cards {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .feature-item {
-    padding: 20px;
-  }
+    .why-choose-us-card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .why-choose-us-heading {
+        font-size: 32px;
+    }
+
+    .why-choose-us-subheading {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-choose-us-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .why-choose-us-heading {
+        font-size: 28px;
+    }
+
+    .why-choose-us-subheading {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-choose-us-card {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 20px;
+    }
+
+    .why-choose-us-heading {
+        font-size: 24px;
+    }
+
+    .why-choose-us-subheading {
+        font-size: 12px;
+    }
 }
     
     
