@@ -77,11 +77,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 // Wait for the DOM to fully load
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all the portfolio items
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    // Get all the "Why Choose Us" items
+    const whyChooseItems = document.querySelectorAll('.why-choose-item');
 
-    // Hover effect: Animation for portfolio items
-    portfolioItems.forEach(function(item) {
+    // Hover effect: Animation for "Why Choose Us" items
+    whyChooseItems.forEach(function(item) {
         item.addEventListener('mouseenter', function() {
             item.style.transform = "scale(1.05)";
             item.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.2)";
@@ -93,8 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scroll to each portfolio item when clicked
-    portfolioItems.forEach(function(item) {
+    // Smooth scroll to each "Why Choose Us" item when clicked
+    whyChooseItems.forEach(function(item) {
         item.addEventListener('click', function() {
             window.scrollTo({
                 top: item.offsetTop - 100, // Adjust scroll position for better view
