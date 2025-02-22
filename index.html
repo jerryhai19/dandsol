@@ -1,287 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Charset and Viewport Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Website Title -->
-    <title>IT Solutions - Your Trusted Partner for Digital Success</title>
-
-    <!-- External Font Links (Fonts used across the site) -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <!-- External CSS Link -->
-    <link rel="stylesheet" href="styles.css">
-    
-
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Additional Meta Tags (SEO and Social Sharing) -->
-    <meta name="description" content="We provide innovative IT services that help your business grow and thrive in a digital-first world.">
-    <meta name="keywords" content="IT solutions, web development, digital transformation, tech solutions">
-    <meta property="og:title" content="IT Solutions - Your Trusted Partner for Digital Success">
-    <meta property="og:description" content="Helping businesses with IT solutions, web development, and digital transformation.">
-    <meta property="og:image" content="path-to-og-image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Feature-Rich Website</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS for scroll animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- Venobox for portfolio lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<body>
-
-    <!-- Navbar / Header Section -->
-    <header id="navbar" class="navbar">
-        <div class="navbar-container">
-            
-
-            <!-- Navigation Menu -->
-            <nav class="navbar-nav">
-                <ul class="navbar-links">
-                    <li><a href="#home" class="navbar-link">Home</a></li>
-                    <li><a href="#about" class="navbar-link">About</a></li>
-                    <li><a href="#services" class="navbar-link">Services</a></li>
-                    <li><a href="#contact" class="navbar-link">Contact</a></li>
-                    <li><a href="#blog" class="navbar-link">Blog</a></li>
-                </ul>
-            </nav>
-
-            <!-- Mobile Hamburger Menu (for responsive view) -->
-            <div class="hamburger-menu">
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
-            </div>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+  <!-- Header & Navigation -->
+  <header>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyCompany</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-<!-- Hero Section -->
-<section id="hero" class="hero">
-    <div class="hero-container">
-        <!-- Left Side: Heading and Subheading -->
-        <div class="hero-content">
-            <h1 class="hero-heading">Transforming Ideas into Digital Success</h1>
-            <p class="hero-subheading">We specialize in creating cutting-edge IT solutions that empower your business to thrive in a fast-evolving digital world.</p>
-            
-            <!-- Call to Action Buttons -->
-            <div class="hero-buttons">
-                <a href="#services" class="hero-btn primary-btn">Our Services</a>
-                <a href="#contact" class="hero-btn secondary-btn">Get in Touch</a>
-            </div>
-        </div>
-
-        <!-- Right Side: Hero Image -->
-        <div class="hero-image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaKwCAakCIXM8RnwDILftYFDRm25BsHwpYuHrnG2JSwI8zjWpLYqTXkV0&s=10" alt="Digital Transformation" class="hero-img">
-        </div>
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex align-items-center" style="background: url('https://picsum.photos/1600/900?random=1') no-repeat center center/cover;">
+    <div class="container text-center" data-aos="fade-up">
+      <h1 class="display-4 text-white">Welcome to MyCompany</h1>
+      <p class="lead text-white">Innovative Solutions for Modern Businesses</p>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3">Get In Touch</a>
     </div>
-</section>
+  </section>
 
-<!-- Services Section -->
-<section id="services" class="services">
-    <div class="services-container">
-        <h2 class="services-heading">Our Services</h2>
-        <p class="services-subheading">We provide innovative solutions to help businesses thrive in the digital world.</p>
-
-        <div class="services-cards">
-            <!-- Service 1 -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPSYd9AF3IpBlrrCBr8AWjHEqPbUdajIJlUlQg4Tq1mcAF8j8of058-F8&s=10" alt="Web Design">
-                </div>
-                <h3 class="service-title">Web Design</h3>
-                <p class="service-description">We create stunning and user-friendly websites tailored to your brand's identity and needs.</p>
-            </div>
-
-            <!-- Service 2 -->
-
-       <div class="service-card">
-                <div class="service-icon">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM6BDe_7Smri9sEu01EYdalauMvCO2GkvYKw&s" alt="App Development">
-                </div>
-                <h3 class="service-title">App Development</h3>
-                <p class="service-description">Develop custom mobile applications that provide seamless user experiences on both Android and iOS platforms.</p>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGTrK4oJLtnFnsIEfWagwj4I1EBs7PNlqvNqsBu-WimAGXkQ8F770LkWlt&s=10" alt="SEO">
-                </div>
-                <h3 class="service-title">SEO Optimization</h3>
-                <p class="service-description">Optimize your website to rank higher in search engines and attract more organic traffic to your site.</p>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKn0O4VVOyZB2E73DwaHW7tF-jLjITHt1eeimpdjbkG7iMTtVxMp12xSKz&s=10" alt="Digital Marketing">
-                </div>
-                <h3 class="service-title">Digital Marketing</h3>
-                <p class="service-description">Boost your brand's online presence with tailored digital marketing strategies across various channels.</p>
-            </div>
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container" data-aos="fade-right">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>We are a team of passionate professionals dedicated to delivering innovative digital solutions that drive success. Our expertise spans web development, mobile applications, and digital marketing.</p>
+          <p>With a forward-thinking approach, we tailor every project to meet our clients’ unique needs. Join us on a journey of growth and excellence.</p>
         </div>
+        <div class="col-md-6">
+          <img src="https://picsum.photos/600/400?random=2" alt="About Us" class="img-fluid rounded">
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-           <!-- WhatsApp -->
-<section id="WhatsApp" class="WhatsApp">
-    <div class="WhatsApp-container">
-        <h2 class="WhatsApp-heading">Our Services</h2>
-        <p class="WhatsApp-subheading">We provide innovative solutions to help businesses thrive in the digital world.</p>
-
-        <div class="WhatsApp-cards">
-            <!-- Service 1 -->
-            <div class="WhatsApp-card">
-                <div class="WhatsApp-icon">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPSYd9AF3IpBlrrCBr8AWjHEqPbUdajIJlUlQg4Tq1mcAF8j8of058-F8&s=10" alt="Web Design">
-                </div>
-                <h3 class="WhatsApp-title">Web Design</h3>
-                <p class="WhatsApp-description">We create stunning and user-friendly websites tailored to your brand's identity and needs.</p>
-            </div>
-
-            <!-- Service 2 -->
-
-       <div class="service-card">
-                <div class="service-icon">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM6BDe_7Smri9sEu01EYdalauMvCO2GkvYKw&s" alt="App Development">
-                </div>
-                <h3 class="service-title">App Development</h3>
-                <p class="service-description">Develop custom mobile applications that provide seamless user experiences on both Android and iOS platforms.</p>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGTrK4oJLtnFnsIEfWagwj4I1EBs7PNlqvNqsBu-WimAGXkQ8F770LkWlt&s=10" alt="SEO">
-                </div>
-                <h3 class="service-title">SEO Optimization</h3>
-                <p class="service-description">Optimize your website to rank higher in search engines and attract more organic traffic to your site.</p>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKn0O4VVOyZB2E73DwaHW7tF-jLjITHt1eeimpdjbkG7iMTtVxMp12xSKz&s=10" alt="Digital Marketing">
-                </div>
-                <h3 class="service-title">Digital Marketing</h3>
-                <p class="service-description">Boost your brand's online presence with tailored digital marketing strategies across various channels.</p>
-            </div>
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center mb-5">
+        <h2>Our Services</h2>
+        <p>What we offer</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-box p-4">
+            <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+            <h4>Web Development</h4>
+            <p>Modern, responsive websites built with the latest technologies.</p>
+          </div>
         </div>
+        <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-box p-4">
+            <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+            <h4>Mobile Apps</h4>
+            <p>Innovative mobile solutions for both Android and iOS platforms.</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-box p-4">
+            <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+            <h4>Digital Marketing</h4>
+            <p>Strategic digital marketing services to boost your online presence.</p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>     
-            
-<!-- Testimonial Section -->
-<section id="testimonials" class="testimonials">
-    <div class="testimonials-container">
-        <h2 class="testimonials-heading">What Our Clients Say</h2>
-        <p class="testimonials-subheading">See how we’ve helped our clients achieve their goals.</p>
+  </section>
 
-        <div class="testimonials-carousel">
-            <!-- Testimonial Item 1 -->
-            <div class="testimonial-item">
-                <div class="testimonial-content">
-                    <p class="testimonial-quote">"This team exceeded all of our expectations. Their work is top-notch!"</p>
-                </div>
-                <div class="testimonial-author">
-                    <img src="client1.jpg" alt="Client 1" class="testimonial-image">
-                    <p class="author-name">John Doe</p>
-                    <p class="author-title">CEO, Example Inc.</p>
-                </div>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center mb-5">
+        <h2>Our Portfolio</h2>
+        <p>Explore our work</p>
+      </div>
+      <div class="text-center mb-4">
+        <button class="btn btn-outline-primary filter-btn active" data-filter="all">All</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="web">Web</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="mobile">Mobile</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="design">Design</button>
+      </div>
+      <div class="row portfolio-container">
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-4 portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-wrap">
+            <img src="https://picsum.photos/600/400?random=3" class="img-fluid" alt="Portfolio 1">
+            <div class="portfolio-info">
+              <h4>Web Project 1</h4>
+              <p>Web</p>
+              <a href="https://picsum.photos/1200/800?random=3" class="venobox" data-gall="portfolioGallery" title="Web Project 1">
+                <i class="fas fa-plus"></i>
+              </a>
             </div>
-
-            <!-- Testimonial Item 2 -->
-            <div class="testimonial-item">
-                <div class="testimonial-content">
-                    <p class="testimonial-quote">"We’ve seen a dramatic increase in sales after working with this team. Highly recommended!"</p>
-                </div>
-                <div class="testimonial-author">
-                    <img src="client2.jpg" alt="Client 2" class=
-                        "testimonial-image">
-                    <p class="author-name">Jane Smith</p>
-                    <p class="author-title">Marketing Director, Business Corp.</p>
-                </div>
-            </div>
-
-            <!-- Testimonial Item 3 -->
-            <div class="testimonial-item">
-                <div class="testimonial-content">
-                    <p class="testimonial-quote">"The team’s attention to detail and creativity was exactly what we needed."</p>
-                </div>
-                <div class="testimonial-author">
-                    <img src="client3.jpg" alt="Client 3" class="testimonial-image">
-                    <p class="author-name">Michael Brown</p>
-                    <p class="author-title">Founder, Tech Solutions</p>
-                </div>
-            </div>
+          </div>
         </div>
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-4 portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-wrap">
+            <img src="https://picsum.photos/600/400?random=4" class="img-fluid" alt="Portfolio 2">
+            <div class="portfolio-info">
+              <h4>Mobile App 1</h4>
+              <p>Mobile</p>
+              <a href="https://picsum.photos/1200/800?random=4" class="venobox" data-gall="portfolioGallery" title="Mobile App 1">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-4 portfolio-item" data-category="design" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-wrap">
+            <img src="https://picsum.photos/600/400?random=5" class="img-fluid" alt="Portfolio 3">
+            <div class="portfolio-info">
+              <h4>Design Project 1</h4>
+              <p>Design</p>
+              <a href="https://picsum.photos/1200/800?random=5" class="venobox" data-gall="portfolioGallery" title="Design Project 1">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Additional portfolio items can be added similarly -->
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <div class="contact-container">
-        <h2 class="contact-heading">Get In Touch</h2>
-        <p class="contact-subheading">Have any questions? We’d love to hear from you.</p>
-
-        <div class="contact-form-container">
-            <form action="#" method="POST" class="contact-form">
-                <div class="form-group">
-                    <label for="name" class="form-label">Your Name</label>
-                    <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email" class="form-label">Your Email</label>
-                    <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message" class="form-label">Your Message</label>
-                    <textarea id="message" name="message" class="form-input" placeholder="Enter your message" rows="5" required></textarea>
-                </div>
-
-                <button type="submit" class="form-submit">Send Message</button>
-            </form>
-        </div>
-
-        <div class="contact-map">
-            <h3>Our Location</h3>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center mb-5">
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Testimonial 1 -->
+          <div class="carousel-item active">
+            <div class="testimonial text-center">
+              <img src="https://picsum.photos/100/100?random=6" class="rounded-circle mb-3" alt="Client 1">
+              <p class="lead">"Their innovative solutions helped transform our business."</p>
+              <h5>- John Doe</h5>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section class="about" id="about">
-    <div class="about-container">
-        <div class="about-content">
-            <h2 class="about-heading">About Us</h2>
-            <p class="about-subheading">We are a creative agency that specializes in designing and developing beautiful websites.</p>
-            <div class="about-image-container">
-                <img src="images/about-image.jpg" alt="Team image" class="about-image">
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="carousel-item">
+            <div class="testimonial text-center">
+              <img src="https://picsum.photos/100/100?random=7" class="rounded-circle mb-3" alt="Client 2">
+              <p class="lead">"Exceptional service and support at every step."</p>
+              <h5>- Jane Smith</h5>
             </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="carousel-item">
+            <div class="testimonial text-center">
+              <img src="https://picsum.photos/100/100?random=8" class="rounded-circle mb-3" alt="Client 3">
+              <p class="lead">"A forward-thinking team with an eye for detail."</p>
+              <h5>- Alex Johnson</h5>
+            </div>
+          </div>
         </div>
-        <div class="about-details">
-            <h3 class="about-details-heading">Our Mission</h3>
-            <p class="about-details-text">We aim to provide unique and professional digital solutions that empower businesses to succeed in a digital-first world.</p>
-        </div>
-        <div class="about-values">
-            <h3 class="about-values-heading">Our Values</h3>
-            <ul class="about-values-list">
-                <li class="about-values-item">Innovation</li>
-                <li class="about-values-item">Integrity</li>
-                <li class="about-values-item">Excellence</li>
-                <li class="about-values-item">Collaboration</li>
-            </ul>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-</section>
+  </section>
 
-   <script src="script.js"></script> 
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center mb-5">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <!-- Google Maps Embed (Replace YOUR_API_KEY with a valid key) -->
+          <div id="map" style="width: 100%; height: 400px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Back to Top Button -->
+  <a href="#hero" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>About MyCompany</h5>
+          <p>We create innovative digital solutions to help your business thrive in a competitive market.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#hero" class="text-light">Home</a></li>
+            <li><a href="#about" class="text-light">About</a></li>
+            <li><a href="#services" class="text-light">Services</a></li>
+            <li><a href="#portfolio" class="text-light">Portfolio</a></li>
+            <li><a href="#contact" class="text-light">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Follow Us</h5>
+          <ul class="list-unstyled d-flex">
+            <li class="me-3"><a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="me-3"><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
+            <li class="me-3"><a href="#" class="text-light"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        &copy; 2025 MyCompany. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap 5 Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Venobox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
+  <!-- Google Maps API (Replace YOUR_API_KEY with your valid key) -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
 </body>
 </html>
