@@ -232,6 +232,22 @@
     </div>
   </section>
 
+  <!-- Google Maps Authentication Failure Handler -->
+<script>
+  function gm_authFailure() {
+    alert('Google Maps authentication failed. Please check your API key and usage restrictions in the Google Cloud Console.');
+  }
+</script>
+
+<!-- Google Maps API Script (Replace YOUR_API_KEY with your actual key) -->
+<script
+  async
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+  onerror="gm_authFailure()">
+</script>
+  
+
   <!-- Back to Top Button -->
   <a href="#hero" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
 
